@@ -1,0 +1,16 @@
+# Generates every launcher icon size from one image.
+# Run:  dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  min_sdk_android: 24
+  # Android 8+ shapes the icon itself (circle, squircle...): background + foreground
+  adaptive_icon_background: "#0E4C4F"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#0E4C4F"
+    theme_color: "#0E4C4F"
